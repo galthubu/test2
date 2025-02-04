@@ -1,3 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
 :root {
-    --couleur-primaire : #2a6442;
+    --couleur-primaire : #2f3540;
+}
+
+.container {
+    display: block;
+    text-align: center;
+}
+
+footer {
+    visibility: hidden;
+}
+
+h1 {
+    font-family: 'DotGothic16', sans-serif;
+    color: #ffffff;
+}
+
+.photo {
+    width: 50%;
+}
+
+#lol {
+   color: red;
+}
+
+#lol2 {
+    color: #FFC947;
+}
+
+.deport {
+    display: flex;
+    flex-direction: row;
+}
+
+.barre {
+      text-decoration: line-through;
+}
+
+.italique {
+    font-style: italic;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+/*img {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+table {
+    width: 100%;
+    font-size: 70%;
+}
+
+th {
+    text-align: center;
+}
+
+tr,td {
+  border: 1px solid black;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #2f3540;
+    text-align: center;
+    color: #ffffff;
+    background-image:url("images/hand-2223109_640.jpg")
+}
+
+a {
+    color: #ffffff !important;
+}
+
+img {
+    max-width: 100%;
+}
+.slider-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+iframe {
+  border: 10px solid red;
+}
+
+@keyframes color {
+  0%   { background: #33CCCC; }
+  20%  { background: #33CC36; }
+  40%  { background: #B8CC33; }
+  60%  { background: #FCCA00; }
+  80%  { background: #33CC36; }
+  100% { background: #33CCCC; }
 }
